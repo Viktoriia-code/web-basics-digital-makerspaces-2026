@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">HTML icon</title>
+  <desc id="desc">Orange HTML5-style badge with angle brackets.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff8a3d" />
+      <stop offset="100%" stop-color="#f4511e" />
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="20" fill="url(#g)" />
+  <rect x="22" y="22" width="84" height="84" rx="14" fill="rgba(255,255,255,0.12)" />
+  <path d="M50 38L34 64l16 26" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M78 38l16 26-16 26" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M67 34l-6 60" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" />
+</svg>

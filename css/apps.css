@@ -1,0 +1,101 @@
+/* --- Task list widget --- */
+.todo-form {
+  display: flex;
+  gap: 0.6rem;
+}
+ 
+.todo-form input {
+  flex: 1;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 0.65rem 0.85rem;
+  font-size: 0.9rem;
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+ 
+.todo-form .btn {
+  padding: 0.65rem 1.1rem;
+  font-size: 0.85rem;
+}
+ 
+.todo-list {
+  margin-top: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+ 
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+  background: var(--color-bg);
+}
+ 
+.todo-list li.done span.todo-text {
+  text-decoration: line-through;
+  color: var(--color-text-muted);
+}
+ 
+.todo-list input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-orange);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+ 
+.todo-text {
+  flex: 1;
+}
+ 
+.todo-remove {
+  border: none;
+  background: none;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2rem 0.3rem;
+}
+ 
+.todo-remove:hover {
+  color: var(--color-orange-deep);
+}
+ 
+.todo-empty {
+  margin-top: 1.1rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+ 
+.todo-empty.hidden {
+  display: none;
+}
+ 
+/* --- Word counter widget --- */
+.counter-textarea {
+  width: 100%;
+  resize: vertical;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 0.85rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.5;
+}
+ 
+.counter-widget .counter-results {
+  margin-top: 1.1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}

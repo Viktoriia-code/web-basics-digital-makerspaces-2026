@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">JavaScript icon</title>
+  <desc id="desc">Yellow JavaScript badge with JS letters.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd84c" />
+      <stop offset="100%" stop-color="#e5b92f" />
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="20" fill="url(#g)" />
+  <rect x="22" y="22" width="84" height="84" rx="14" fill="rgba(255,255,255,0.12)" />
+  <text x="64" y="78" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#15140f">JS</text>
+</svg>

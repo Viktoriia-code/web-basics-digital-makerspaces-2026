@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Viktoriia Beloborodova favicon</title>
+  <desc id="desc">Orange circle with the letters VB.</desc>
+  <rect width="64" height="64" rx="16" fill="#f4511e"/>
+  <circle cx="32" cy="32" r="24" fill="#fff" opacity="0.12"/>
+  <path d="M18 18l10 28 9-20 9 20 10-28" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
