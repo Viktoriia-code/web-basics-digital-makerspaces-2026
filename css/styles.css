@@ -233,7 +233,7 @@ section {
   font-weight: 600;
 }
 
-.hero-title .accent {
+.accent {
   color: var(--color-orange);
 }
 
@@ -547,10 +547,6 @@ section {
   max-width: 20ch;
 }
 
-.page-hero .accent {
-  color: var(--color-orange);
-}
-
 .page-hero p {
   margin-top: 1.1rem;
   max-width: 56ch;
@@ -819,7 +815,7 @@ h2 {
   max-width: 68ch;
 }
 
-.reflection-body p + p {
+.reflection-body p + p, .reflection-body h3 {
   margin-top: 1.1rem;
 }
 
