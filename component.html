@@ -4,16 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Component — Viktoriia Beloborodova</title>
-  <meta name="description" content="About Viktoriia Beloborodova, a Web Basics student at Metropolia UAS, plus a reflection on digital makerspaces and data sovereignty." />
+  <meta name="description"
+    content="About Viktoriia Beloborodova, a Web Basics student at Metropolia UAS, plus a reflection on digital makerspaces and data sovereignty." />
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  
+
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/apps.css" />
 </head>
+
 <body>
   <!-- === HEADER === -->
   <header class="site-header">
@@ -30,149 +35,116 @@
           <li><a href="component.html" class="main-nav-link" aria-current="page">Component</a></li>
         </ul>
         <div class="header-actions">
-          <a href="https://ccmjs.github.io/digital-makerspace/?view=home&lang=en" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Digital Makerspace</a>
+          <a href="https://ccmjs.github.io/digital-makerspace/?view=home&lang=en" class="btn btn-primary"
+            target="_blank" rel="noopener noreferrer">Digital Makerspace</a>
         </div>
       </nav>
-      
-      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav"
+        aria-label="Toggle navigation menu">
         <span></span>
       </button>
     </div>
   </header>
-  
+
   <main>
     <!-- === PAGE HERO === -->
     <section class="page-hero">
       <div class="wrap page-hero-grid">
         <div class="page-hero-copy">
           <span class="eyebrow">Component</span>
-          <h1>Welcome to my component — <span class="accent">Name.</span></h1>
+          <h1>Welcome to the course — <span class="accent">Day 1.</span></h1>
           <p>
-            I'm a last-year student in Software Engineering bachelor's degree at Metropolia UAS,
-            where I'm learning to build for the web and mobiles. Below is a bit about how I got here, 
-            what I'm working on, and how I think about the tools I'm learning to use.
+            Today we will learn the basics of the Web and HTML, from understanding how browsers and servers communicate
+            to building a first webpage with HTML.
+          </p>
+          <p>
+            This page combines <span class="accent">three functional embedded web apps</span>, meaningfully integrated
+            to support students throughout the course: exploring the learning material, testing their understanding, and
+            accessing useful resources for further learning.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- === COMPONENT SECTION === -->
+    <!-- Presentation -->
+    <section class="wrap app-card">
+      <div class="app-card-head">
+        <div>
+          <h2>Day 1 Presentation</h2>
+          <p>Course overview and presentation slides for Day 1 of the Web Basics course, covering the fundamentals
+            of the Web, HTML, CSS, and JavaScript.</p>
+        </div>
+        <span class="app-tag">PDF Viewer</span>
+      </div>
+      <div class="app-body">
+        <script src='https://ccmjs.github.io/tkless-components/pdf_viewer/ccm.pdf_viewer.min.js'></script>
+        <ccm-pdf_viewer
+          src='["ccm.get",{"name":"dms2-configs","url":"https://ccm2.inf.h-brs.de"},["pdf_viewer","1786880100046X01320528701472734"]]'></ccm-pdf_viewer>
+        <br>
+        <p>
+          This presentation introduces the basics of the Web, how browsers and servers communicate, and the role of
+          HTML, CSS, and JavaScript. It also covers how to build your first webpage, choose a code editor, and find
+          useful resources for learning web development.
+        </p>
+
+        <br>
+        <h3>Additional Resources</h3>
+        <p>HTML Element Reference: <a
+            href="https://www.w3schools.com/tags/default.asp">https://www.w3schools.com/tags/default.asp</a></p>
+        <p>HTML Introduction: <a
+            href="https://youtu.be/it1rTvBcfRg&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s">https://youtu.be/it1rTvBcfRg&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s</a>
+        </p>
+        <p>HTML Tutorial: <a
+            href="https://www.w3schools.com/html/default.asp">https://www.w3schools.com/html/default.asp</a></p>
+      </div>
+    </section>
+
+    <!-- Quiz  -->
     <section class="about-grid">
       <div class="wrap">
-        <div class="about-copy">
-          <h2>How I got into this</h2>
+        <div class="section-heading">
+          <span class="app-tag">Quiz</span>
+          <br>
+          <h2>Day 1 Quiz</h2>
           <p>
-            Back in 2015, I earned a bachelor's degree in Management and after that I entered the world of IT, working for three years as an Electronic Data Interchange (EDI) specialist in a major IT company that provides a vast variety of EDI and SaaS solutions for businesses. I gained a deep understanding of B2B EDI and supply chain, developed skills in efficiently organizing IT workflows in teams, and improved my ability to communicate with clients and partners.
+          Course overview and presentation slides for Day 1 of the Web Basics course, covering the fundamentals of the
+          Web, HTML, CSS, and JavaScript.
           </p>
+        </div>
+        <div class="profile-card">
+          <div class="profile-card-head">Course overview + HTML Quiz</div>
+          <div class="profile-card-body">
+          <script src='https://ccmjs.github.io/akless-components/quiz/ccm.quiz.min.js'></script><ccm-quiz
+          src='["ccm.get",{"name":"dms2-configs","url":"https://ccm2.inf.h-brs.de"},["quiz","1786877093743X9529275996803878"]]'></ccm-quiz>
           <p>
-            During this time, I realized I wanted to learn more about technology and pursue software development, which became my true passion.
+          This quiz tests your understanding of the basics of the Web, HTML, CSS, and JavaScript. It includes
+          multiple-choice questions and provides feedback on your answers.
           </p>
-
-          <h2>What I'm learning</h2>
-          <p>I completed a vocational degree in ICT at Keuda Vocational School in Kerava in 2022, studying entirely in Finnish. I worked as a frontend developer for 1 year and got solid skills on web development using HTML, CSS, JavaScript, React and TypeScript.</p>
-          <p>
-            I am in the final year of a bachelor's degree in Software Engineering at Metropolia AMK in Helsinki. I have learned Java, JavaScript, Kotlin and Python, databases, React, Node.js, Spring Boot and other essential software development subjects.
-            Currently, I am working as a Software Engineering Intern at <a href="https://www.zalando.fi/" target="_blank" rel="noopener noreferrer">Zalando</a>, where I am contributing to frontend work on a real product team while learning how large codebases, code reviews, and collaboration work in practice.
-          </p>
-
-          <h2>Timeline</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="eyebrow">2026 – Now</span>
-              <h4>Software Engineering Intern</h4>
-              <h4>Zalando</h4>
-              <p>Contributing to frontend work on a real product team while learning how large codebases, code reviews, and collaboration work in practice.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="eyebrow">2023 – Now</span>
-              <h4>Bachelor's Degree at Software Engineering</h4>
-              <h4>Metropolia UAS</h4>
-              <p>Building a stronger foundation in web and mobile development through hands-on projects, testing, and teamwork.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="eyebrow">2022 – 2023</span>
-              <h4>Vocational Qualification at ICT</h4>
-              <h4>KEUDA Vocational School</h4>
-              <p>Gained a practical introduction to programming and software tools, with an emphasis on structured problem solving and everyday coding habits.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="eyebrow">2017 – 2020</span>
-              <h4>EDI specialist</h4>
-              <h4>KORUS Consulting CIS</h4>
-              <p>Worked with data exchange setups, customer support, and troubleshooting, turning technical issues into clear and reliable solutions.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="eyebrow">2011 - 2015</span>
-              <h4>Bachelor's Degree at Management</h4>
-              <h4>Ural State Mining University</h4>
-              <p>Gave me a broader view of business processes, planning, and communication that still helps me understand users and team goals.</p>
-            </div>
           </div>
         </div>
-
-        <aside class="profile-card">
-          <div class="profile-card-head">profile.json</div>
-          <div class="profile-card-body">
-            <div class="profile-avatar">VB</div>
-            <h3>Viktoriia Beloborodova</h3>
-            <p class="profile-role">Software Engineering student, Metropolia UAS</p>
-
-            <ul class="profile-facts">
-              <li><span>Based in</span><span>Helsinki, Finland</span></li>
-              <li><span>Cohort</span><span>2023</span></li>
-              <li><span>Focus</span><span>WEB · Mobile · AWS</span></li>
-              <li><span>Status</span><span>Student</span></li>
-            </ul>
-
-            <div class="skills">
-              <div class="skill-row">
-                <span>HTML</span>
-                <div class="skill-track"><div class="skill-fill" style="width: 85%;"></div></div>
-              </div>
-              <div class="skill-row">
-                <span>CSS</span>
-                <div class="skill-track"><div class="skill-fill" style="width: 75%;"></div></div>
-              </div>
-              <div class="skill-row">
-                <span>JavaScript</span>
-                <div class="skill-track"><div class="skill-fill" style="width: 60%;"></div></div>
-              </div>
-              <div class="skill-row">
-                <span>React</span>
-                <div class="skill-track"><div class="skill-fill" style="width: 70%;"></div></div>
-              </div>
-              <div class="skill-row">
-                <span>TypeScript</span>
-                <div class="skill-track"><div class="skill-fill" style="width: 50%;"></div></div>
-              </div>
-              <div class="skill-row">
-                <span>Java</span>
-                <div class="skill-track"><div class="skill-fill" style="width: 40%;"></div></div>
-              </div>
-              <div class="skill-row">
-                <span>Kotlin</span>
-                <div class="skill-track"><div class="skill-fill" style="width: 30%;"></div></div>
-              </div>
-              <div class="skill-row">
-                <span>GraphQL</span>
-                <div class="skill-track"><div class="skill-fill" style="width: 30%;"></div></div>
-              </div>
-              <div class="skill-row">
-                <span>API</span>
-                <div class="skill-track"><div class="skill-fill" style="width: 70%;"></div></div>
-              </div>
-              <div class="skill-row">
-                <span>Python</span>
-                <div class="skill-track"><div class="skill-fill" style="width: 40%;"></div></div>
-              </div>
-              <div class="skill-row">
-                <span>AWS</span>
-                <div class="skill-track"><div class="skill-fill" style="width: 50%;"></div></div>
-              </div>
-            </div>
-          </div>
-        </aside>
       </div>
+    </section>
+
+    <!-- Quiz  -->
+    <section class="about-grid">
+      <div class="wrap">
+        <div class="profile-card">
+          <div class="profile-card-head">Course overview + HTML Quiz</div>
+          <div class="profile-card-body">
+          </div>
+        </div>
+        <div class="section-heading">
+          <span class="app-tag">Quiz</span>
+          <br>
+          <h2>Day 1 Quiz</h2>
+          <p>
+          Course overview and presentation slides for Day 1 of the Web Basics course, covering the fundamentals of the
+          Web, HTML, CSS, and JavaScript.
+          </p>
+        </div>
+      </div>
+      <script src='https://ccmjs.github.io/tkless-components/comment/ccm.comment.min.js'></script><ccm-comment src='["ccm.get",{"name":"dms2-configs","url":"https://ccm2.inf.h-brs.de"},["comment","1786890464122X8395945701170214"]]'></ccm-comment>
     </section>
   </main>
 
@@ -184,7 +156,8 @@
           <a href="../home/index.html" class="logo">
             <span class="tag">&lt;</span>Viktoriia Beloborodova<span class="tag">/&gt;</span>
           </a>
-          <p>A student-built portfolio, written in plain HTML, CSS and JavaScript for the Web Basics course at Metropolia UAS.</p>
+          <p>A student-built portfolio, written in plain HTML, CSS and JavaScript for the Web Basics course at
+            Metropolia UAS.</p>
         </div>
 
         <div class="footer-col">
@@ -208,11 +181,13 @@
 
       <div class="footer-bottom">
         <span>© <span id="year"></span> Viktoriia Beloborodova. Built for Web Basics, Metropolia UAS.</span>
-        <span class="made-with">Made with <span class="tag">&lt;html&gt;</span>, <span class="tag">css</span> &amp; <span class="tag">js</span></span>
+        <span class="made-with">Made with <span class="tag">&lt;html&gt;</span>, <span class="tag">css</span> &amp;
+          <span class="tag">js</span></span>
       </div>
     </div>
   </footer>
 
   <script src="js/script.js"></script>
 </body>
+
 </html>

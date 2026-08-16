@@ -883,7 +883,7 @@ h2 {
   margin-top: 0.35rem;
   font-size: 0.85rem;
   color: var(--color-text-muted);
-  max-width: 42ch;
+  max-width: 85%;
 }
 
 .app-tag {
