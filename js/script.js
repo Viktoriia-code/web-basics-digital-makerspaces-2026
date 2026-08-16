@@ -30,8 +30,6 @@ scrollTopButton.setAttribute("aria-label", "Scroll to top");
 scrollTopButton.innerHTML = "↑";
 document.body.appendChild(scrollTopButton);
 
-const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-
 function updateScrollButton() {
   scrollTopButton.classList.toggle("is-visible", window.scrollY > 400);
 }
@@ -39,7 +37,7 @@ function updateScrollButton() {
 scrollTopButton.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: prefersReducedMotion.matches ? "auto" : "smooth",
+    behavior: "smooth",
   });
 });
 
@@ -52,29 +50,4 @@ updateScrollButton();
 const yearEl = document.getElementById("year");
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
-}
-
-// ============================================================
-// Hero console typing effect
-// ============================================================
-const typedLine = document.getElementById("typed-line");
-
-if (typedLine && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  const message = "console.log('Hello, welcome to my site.');";
-  let i = 0;
-
-  const type = () => {
-    if (i <= message.length) {
-      typedLine.innerHTML =
-        `<span class="tag">${message.slice(0, i)}</span><span class="cursor"></span>`;
-      i++;
-      setTimeout(type, 45);
-    }
-  };
-
-  // Start once the browser mock is in view, so it plays on load
-  type();
-} else if (typedLine) {
-  typedLine.innerHTML =
-    `<span class="tag">console.log('Hello, welcome to my site.');</span>`;
 }
