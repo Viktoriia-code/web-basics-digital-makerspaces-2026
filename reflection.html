@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apps — Viktoriia Beloborodova</title>
+  <meta name="description" content="Small interactive apps built with plain HTML, CSS and JavaScript by Viktoriia Beloborodova for the Web Basics course at Metropolia UAS." />
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/apps.css" />
+</head>
+<body>
+  <!-- === HEADER === -->
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="logo" aria-label="Viktoriia Beloborodova, home">
+        <span class="tag">&lt;</span>Viktoriia Beloborodova<span class="tag">/&gt;</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html" class="main-nav-link">Home</a></li>
+          <li><a href="about.html" class="main-nav-link">About me</a></li>
+          <li><a href="apps.html" class="main-nav-link">Apps</a></li>
+          <li><a href="day_1.html" class="main-nav-link">Day 1</a></li>
+          <li><a href="day_2.html" class="main-nav-link">Day 2</a></li>
+          <li><a href="reflection.html" class="main-nav-link" aria-current="page">Reflection</a></li>
+        </ul>
+        <div class="header-actions">
+          <a href="https://ccmjs.github.io/digital-makerspace/?view=home&lang=en" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Digital Makerspace</a>
+        </div>
+      </nav>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- === PAGE HERO === -->
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>A short personal reflection on <span class="accent">Data Sovereignty</span></h1>
+        <p>
+          The reflection demonstrates thoughts about the concepts beyond simply using the tools.
+        </p>
+      </div>
+    </section>
+
+    <!-- === REFLECTION === -->
+    <section class="reflection">
+      <div class="wrap">
+        <div class="reflection-heading">
+          <span class="eyebrow">Reflection</span>
+          <h2>On makerspaces and owning what you build</h2>
+        </div>
+
+        <div class="reflection-body">
+          <p>
+            Building this site with plain HTML, CSS and JavaScript instead of
+            a website builder or a framework has changed how I think about
+            what it means to make something for the web. A drag-and-drop
+            builder gives you a page, but the page belongs to the platform —
+            it lives inside someone else's system, formatted the way their
+            templates allow, exportable only on their terms. Writing the
+            markup and the styles myself means the opposite is true: every
+            file on this site is mine, in a folder I control, that I can move,
+            rewrite, or host anywhere I choose.
+          </p>
+
+          <p class="pull-quote">
+            "Learning the raw materials of the web is what turns you from a
+            tenant of a platform into someone who actually owns their corner
+            of it."
+          </p>
+
+          <p>
+            That distinction is really what a <strong>digital makerspace</strong>
+            is about. A physical makerspace gives people access to tools —
+            a laser cutter, a 3D printer, a soldering iron — that they'd
+            otherwise never get hands-on time with, so they can build things
+            instead of only buying finished products. A course like this one
+            functions the same way for the web: it hands you the browser's
+            raw tools directly, rather than a polished no-code interface that
+            hides how the page actually works. The skill you walk away with
+            isn't "how to use this one tool," it's "how the web itself is
+            built," which stays useful no matter which tool disappears next.
+          </p>
+
+          <p>
+            The other side of that is <strong>data sovereignty</strong> —
+            who actually controls the content and code once it exists. When
+            I build with a hosted site builder, my portfolio's HTML is
+            generated on the fly by a company's servers, and if that company
+            changes its pricing, shuts down a feature, or discontinues the
+            product, my site can break or disappear with it. This repository
+            of plain files doesn't have that dependency. I can host it on
+            GitHub Pages today and move it to any other web host tomorrow,
+            because nothing about it depends on a proprietary system staying
+            alive. Understanding HTML, CSS and JavaScript directly is, in a
+            small but real way, a form of keeping ownership of my own work.
+          </p>
+          <h3>What do you think about <span class="accent">data sovereignty and web desktops</span>? Share your thoughts.</h3>
+          <script src='https://ccmjs.github.io/tkless-components/comment/ccm.comment.min.js'></script><ccm-comment src='["ccm.get",{"name":"dms2-configs","url":"https://ccm2.inf.h-brs.de"},["comment","1786890464122X8395945701170214"]]'></ccm-comment>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="tag">&lt;</span>Viktoriia Beloborodova<span class="tag">/&gt;</span>
+          </a>
+          <p>A student-built portfolio, written in plain HTML, CSS and JavaScript for the Web Basics course at Metropolia UAS.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="apps.html">Apps</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:viktoriia.beloborodova@example.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Viktoriia Beloborodova. Built for Web Basics, Metropolia UAS.</span>
+        <span class="made-with">Made with <span class="tag">&lt;html&gt;</span>, <span class="tag">css</span> &amp; <span class="tag">js</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/focus_timer.js"></script>
+  <script src="js/css_unit_converter.js"></script>
+  <script src="js/palette_generator.js"></script>
+  <script src="js/task_list.js"></script>
+  <script src="js/word_counter.js"></script>
+</body>
+</html>
